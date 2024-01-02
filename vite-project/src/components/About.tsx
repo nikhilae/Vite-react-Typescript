@@ -1,7 +1,11 @@
 import React from "react";
 
 const About = () => {
-  return <div>console.log("Hey it is me");</div>;
+  return (
+    <div>
+      <h2>"Hey it is me"</h2>
+    </div>
+  );
 };
 
 export default About;
