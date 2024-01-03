@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const About = () => {
+  const [count, updateCount] = useState(100);
   return (
     <div>
-      <h2>"Hey it is me"</h2>
+      <button onClick={() => updateCount(count + 1)} className="counting">
+        Click me
+      </button>
+      <h2>Count is:{count}</h2>
     </div>
   );
 };
